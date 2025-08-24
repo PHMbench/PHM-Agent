@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="PHM-LLM: Prognostic and Health Management with Large Language Models - Advanced AI approaches for predictive maintenance, fault diagnosis, and remaining useful life prediction">
+  <meta property="og:title" content="PHM-LLM: Prognostic and Health Management with Large Language Models"/>
+  <meta property="og:description" content="Advanced AI approaches for predictive maintenance, fault diagnosis, and remaining useful life prediction using Large Language Models"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="PHM-LLM: Prognostic and Health Management with Large Language Models">
+  <meta name="twitter:description" content="Advanced AI approaches for predictive maintenance, fault diagnosis, and remaining useful life prediction using Large Language Models">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="prognostic health management, PHM, large language models, LLM, predictive maintenance, fault diagnosis, remaining useful life, RUL, anomaly detection, machine learning, AI, industrial AI, condition monitoring">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>PHM-LLM: Prognostic and Health Management with Large Language Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/phm-theme.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="static/js/phm-functionality.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">PHM-LLM: Prognostic and Health Management with Large Language Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Advancing Prognostic and Health Management through Large Language Models: Intelligent predictive maintenance, fault diagnosis, and remaining useful life prediction for industrial systems.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present PHM-LLM, a novel approach that integrates Large Language Models (LLMs) with Prognostic and Health Management (PHM) systems to revolutionize predictive maintenance and fault diagnosis. Our framework leverages the reasoning capabilities of LLMs to interpret complex sensor data, predict equipment failures, and provide actionable maintenance recommendations. Through comprehensive evaluation on standard PHM benchmarks including NASA C-MAPSS and PHM08 Challenge datasets, we demonstrate significant improvements in remaining useful life (RUL) prediction accuracy and fault classification performance. The system integrates multi-modal sensor data processing with natural language understanding, enabling intuitive human-AI interaction for maintenance decision-making.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Problem Statement -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Problem Statement</h2>
+        <div class="content has-text-justified">
+          <p>
+            Traditional PHM approaches face significant challenges in handling complex, multi-modal industrial data and providing interpretable maintenance decisions. Key challenges include:
+          </p>
+          <ul>
+            <li><strong>Data Complexity:</strong> Industrial systems generate diverse sensor data requiring sophisticated analysis</li>
+            <li><strong>Interpretability:</strong> Black-box models lack explainability for critical maintenance decisions</li>
+            <li><strong>Domain Knowledge Integration:</strong> Difficulty incorporating expert knowledge and maintenance procedures</li>
+            <li><strong>Real-time Decision Making:</strong> Need for rapid, actionable insights for operational systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End problem statement -->
+
+<!-- Method Overview -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our PHM-LLM framework combines the power of Large Language Models with specialized PHM techniques to create an intelligent maintenance system. The approach consists of three main components:
+          </p>
+          <div class="columns is-multiline">
+            <div class="column is-one-third">
+              <div class="box">
+                <h4 class="title is-5">🔍 Data Processing</h4>
+                <p>Multi-modal sensor data fusion and preprocessing pipeline that converts raw industrial data into LLM-compatible representations.</p>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="box">
+                <h4 class="title is-5">🧠 LLM Reasoning</h4>
+                <p>Fine-tuned language models that understand PHM domain knowledge and provide interpretable predictions and recommendations.</p>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="box">
+                <h4 class="title is-5">⚡ Action Generation</h4>
+                <p>Automated maintenance scheduling and decision support system that translates LLM insights into actionable maintenance plans.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method overview -->
+
+<!-- Datasets & Benchmarks -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Datasets & Benchmarks</h2>
+        <div class="content">
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Dataset</th>
+                  <th>Description</th>
+                  <th>Size</th>
+                  <th>Task</th>
+                  <th>Metric</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>NASA C-MAPSS</strong></td>
+                  <td>Turbofan engine degradation simulation</td>
+                  <td>20,631 samples</td>
+                  <td>RUL Prediction</td>
+                  <td>RMSE, Score</td>
+                </tr>
+                <tr>
+                  <td><strong>PHM08 Challenge</strong></td>
+                  <td>Bearing fault detection and classification</td>
+                  <td>2,156 samples</td>
+                  <td>Fault Classification</td>
+                  <td>Accuracy, F1-Score</td>
+                </tr>
+                <tr>
+                  <td><strong>IMS Bearing</strong></td>
+                  <td>Bearing vibration data for condition monitoring</td>
+                  <td>984 samples</td>
+                  <td>Health Assessment</td>
+                  <td>AUC, Precision</td>
+                </tr>
+                <tr>
+                  <td><strong>FEMTO-ST</strong></td>
+                  <td>Bearing accelerated life test data</td>
+                  <td>17 complete runs</td>
+                  <td>RUL Prediction</td>
+                  <td>α-λ Score</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End datasets -->
+
+<!-- Results Visualization -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Results Visualization</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- RUL Prediction Results -->
+        <img src="static/images/rul_prediction.png" alt="RUL Prediction Results"/>
+        <h2 class="subtitle has-text-centered">
+          <strong>RUL Prediction Performance:</strong> Comparison of PHM-LLM vs. baseline methods on NASA C-MAPSS dataset showing 25% improvement in RMSE.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Fault Classification Results -->
+        <img src="static/images/fault_classification.png" alt="Fault Classification Results"/>
+        <h2 class="subtitle has-text-centered">
+          <strong>Fault Classification:</strong> Confusion matrix and performance metrics for bearing fault detection achieving 94.3% accuracy.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- System Architecture Diagram -->
+        <img src="static/images/system_architecture.png" alt="System Architecture"/>
+        <h2 class="subtitle has-text-centered">
+          <strong>System Architecture:</strong> Overview of the PHM-LLM framework showing data flow from sensors to maintenance decisions.
+        </h2>
+      </div>
+     <div class="item">
+      <!-- Health Monitoring Dashboard -->
+      <img src="static/images/health_dashboard.png" alt="Health Monitoring Dashboard"/>
+      <h2 class="subtitle has-text-centered">
+        <strong>Health Monitoring Dashboard:</strong> Real-time system health visualization with predictive alerts and maintenance recommendations.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End results visualization -->
+
+<!-- Performance Metrics -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Performance Metrics</h2>
+        <div class="content">
+          <div class="columns is-multiline">
+            <div class="column is-half">
+              <div class="table-container">
+                <h4 class="title is-5">RUL Prediction Results</h4>
+                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                  <thead>
+                    <tr>
+                      <th>Method</th>
+                      <th>RMSE</th>
+                      <th>Score</th>
+                      <th>MAE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>PHM-LLM (Ours)</strong></td>
+                      <td><strong>12.4</strong></td>
+                      <td><strong>245.8</strong></td>
+                      <td><strong>9.7</strong></td>
+                    </tr>
+                    <tr>
+                      <td>LSTM</td>
+                      <td>16.8</td>
+                      <td>338.4</td>
+                      <td>13.2</td>
+                    </tr>
+                    <tr>
+                      <td>CNN-LSTM</td>
+                      <td>15.1</td>
+                      <td>302.1</td>
+                      <td>12.1</td>
+                    </tr>
+                    <tr>
+                      <td>Transformer</td>
+                      <td>14.2</td>
+                      <td>281.6</td>
+                      <td>11.5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="table-container">
+                <h4 class="title is-5">Fault Classification Results</h4>
+                <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                  <thead>
+                    <tr>
+                      <th>Method</th>
+                      <th>Accuracy</th>
+                      <th>F1-Score</th>
+                      <th>Precision</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>PHM-LLM (Ours)</strong></td>
+                      <td><strong>94.3%</strong></td>
+                      <td><strong>0.941</strong></td>
+                      <td><strong>0.938</strong></td>
+                    </tr>
+                    <tr>
+                      <td>SVM</td>
+                      <td>87.2%</td>
+                      <td>0.869</td>
+                      <td>0.871</td>
+                    </tr>
+                    <tr>
+                      <td>Random Forest</td>
+                      <td>89.6%</td>
+                      <td>0.892</td>
+                      <td>0.895</td>
+                    </tr>
+                    <tr>
+                      <td>Deep CNN</td>
+                      <td>91.8%</td>
+                      <td>0.916</td>
+                      <td>0.919</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End performance metrics -->
+
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

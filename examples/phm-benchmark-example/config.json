@@ -1,0 +1,225 @@
+{
+  "project": {
+    "name": "PHMBench: Comprehensive PHM Evaluation Suite",
+    "short_name": "PHMBench",
+    "type": "benchmark", 
+    "description": "A standardized benchmark for evaluating prognostic health management algorithms with datasets, metrics, and leaderboards",
+    "keywords": ["PHM benchmark", "prognostic health management", "evaluation suite", "RUL prediction", "fault diagnosis", "benchmark datasets", "leaderboard", "algorithm comparison", "PHM evaluation"]
+  },
+  "authors": [
+    {
+      "name": "Dr. Lisa Wang",
+      "link": "https://example.com/lisa-wang",
+      "equal_contribution": true
+    },
+    {
+      "name": "Prof. David Kim",
+      "link": "https://example.com/david-kim", 
+      "equal_contribution": true
+    },
+    {
+      "name": "Dr. Elena Vasquez",
+      "link": "https://example.com/elena-vasquez",
+      "equal_contribution": false
+    }
+  ],
+  "institution": {
+    "name": "PHM Research Consortium",
+    "conference": "PHM Society 2024"
+  },
+  "links": {
+    "paper": "https://arxiv.org/pdf/2024.67890.pdf",
+    "arxiv": "https://arxiv.org/abs/2024.67890", 
+    "code": "https://github.com/example/phm-bench",
+    "toolkit": "https://github.com/example/phm-bench-toolkit",
+    "leaderboard": "https://leaderboard.example.com/phm-bench"
+  },
+  "features": {
+    "show_problem_statement": true,
+    "show_method_overview": false,
+    "show_datasets": true, 
+    "show_performance_metrics": false,
+    "show_api_docs": false,
+    "show_demo": false,
+    "show_case_studies": false,
+    "show_leaderboard": true,
+    "show_evaluation": true,
+    "show_submission": true,
+    "show_video_presentation": true,
+    "show_poster": true,
+    "show_bibtex": true
+  },
+  "benchmark_stats": [
+    {
+      "metric": "Datasets",
+      "value": 15,
+      "unit": "+"
+    },
+    {
+      "metric": "Baseline Methods",
+      "value": 50,
+      "unit": "+"
+    },
+    {
+      "metric": "Evaluation Metrics", 
+      "value": 20,
+      "unit": "+"
+    },
+    {
+      "metric": "Submissions",
+      "value": 200,
+      "unit": "+"
+    }
+  ],
+  "datasets": [
+    {
+      "name": "NASA C-MAPSS",
+      "domain": "Aerospace",
+      "task": "RUL Prediction",
+      "samples": "20,631",
+      "features": "26",
+      "status": "available", 
+      "metrics": ["RMSE", "Score", "MAE"]
+    },
+    {
+      "name": "PHM08 Challenge",
+      "domain": "Manufacturing", 
+      "task": "Fault Classification",
+      "samples": "2,156",
+      "features": "8",
+      "status": "available",
+      "metrics": ["Accuracy", "F1-Score"]
+    },
+    {
+      "name": "IMS Bearing",
+      "domain": "Manufacturing",
+      "task": "Health Assessment", 
+      "samples": "984",
+      "features": "4", 
+      "status": "available",
+      "metrics": ["AUC", "Precision"]
+    },
+    {
+      "name": "FEMTO-ST",
+      "domain": "Manufacturing",
+      "task": "RUL Prediction",
+      "samples": "17 runs",
+      "features": "2",
+      "status": "available", 
+      "metrics": ["α-λ Score"]
+    },
+    {
+      "name": "XJTU-SY", 
+      "domain": "Manufacturing",
+      "task": "RUL Prediction",
+      "samples": "32 bearings",
+      "features": "2",
+      "status": "available",
+      "metrics": ["RMSE", "Score"]
+    },
+    {
+      "name": "WindTurbine-1",
+      "domain": "Energy",
+      "task": "Anomaly Detection", 
+      "samples": "50,000",
+      "features": "12",
+      "status": "processing",
+      "metrics": ["AUC-ROC", "Precision@K"]
+    }
+  ],
+  "leaderboard": {
+    "rul_prediction": {
+      "dataset": "NASA C-MAPSS FD001",
+      "methods": [
+        {
+          "rank": 1,
+          "method": "PHM-LLM",
+          "team": "Our Team", 
+          "rmse": 12.4,
+          "score": 245.8,
+          "mae": 9.7,
+          "date": "2024-01-15",
+          "highlight": true
+        },
+        {
+          "rank": 2,
+          "method": "Deep-RUL",
+          "team": "University A",
+          "rmse": 13.8,
+          "score": 268.3, 
+          "mae": 10.2,
+          "date": "2024-01-10",
+          "highlight": false
+        },
+        {
+          "rank": 3,
+          "method": "Transformer-PHM", 
+          "team": "Company B",
+          "rmse": 14.2,
+          "score": 281.6,
+          "mae": 11.5,
+          "date": "2024-01-08",
+          "highlight": false
+        }
+      ]
+    },
+    "fault_classification": {
+      "dataset": "PHM08 Challenge",
+      "methods": [
+        {
+          "rank": 1,
+          "method": "PHM-LLM",
+          "team": "Our Team",
+          "accuracy": 94.3,
+          "f1": 0.941,
+          "precision": 0.938,
+          "date": "2024-01-15", 
+          "highlight": true
+        },
+        {
+          "rank": 2,
+          "method": "Deep-Classification",
+          "team": "Company E",
+          "accuracy": 91.8,
+          "f1": 0.916,
+          "precision": 0.919,
+          "date": "2024-01-12",
+          "highlight": false
+        }
+      ]
+    }
+  },
+  "evaluation_metrics": [
+    {
+      "task": "RUL Prediction",
+      "primary_metric": "RMSE", 
+      "secondary_metrics": ["MAE", "Score", "R²"],
+      "description": "Root mean square error with asymmetric scoring"
+    },
+    {
+      "task": "Fault Classification",
+      "primary_metric": "F1-Score",
+      "secondary_metrics": ["Accuracy", "Precision", "Recall"],
+      "description": "Weighted F1-score for multi-class problems"
+    },
+    {
+      "task": "Anomaly Detection",
+      "primary_metric": "AUC-ROC",
+      "secondary_metrics": ["Precision@K", "AUC-PR"],
+      "description": "Area under ROC curve for detection performance"
+    },
+    {
+      "task": "Health Assessment",
+      "primary_metric": "Correlation", 
+      "secondary_metrics": ["Monotonicity", "Trendability"],
+      "description": "Correlation with ground truth degradation"
+    }
+  ],
+  "theme": {
+    "primary_color": "#1e40af",
+    "secondary_color": "#374151",
+    "accent_color": "#059669", 
+    "background_color": "#f9fafb",
+    "text_color": "#111827"
+  }
+}

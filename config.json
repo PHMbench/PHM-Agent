@@ -1,0 +1,129 @@
+{
+  "project": {
+    "name": "PHM-LLM: Prognostic and Health Management with Large Language Models",
+    "short_name": "PHM-LLM",
+    "type": "research",
+    "description": "Advanced AI approaches for predictive maintenance, fault diagnosis, and remaining useful life prediction using Large Language Models",
+    "keywords": ["prognostic health management", "PHM", "large language models", "LLM", "predictive maintenance", "fault diagnosis", "remaining useful life", "RUL", "anomaly detection", "machine learning", "AI", "industrial AI", "condition monitoring"]
+  },
+  "authors": [
+    {
+      "name": "First Author",
+      "link": "FIRST AUTHOR PERSONAL LINK",
+      "equal_contribution": true
+    },
+    {
+      "name": "Second Author", 
+      "link": "SECOND AUTHOR PERSONAL LINK",
+      "equal_contribution": true
+    },
+    {
+      "name": "Third Author",
+      "link": "THIRD AUTHOR PERSONAL LINK",
+      "equal_contribution": false
+    }
+  ],
+  "institution": {
+    "name": "Institution Name",
+    "conference": "Conference name and year"
+  },
+  "links": {
+    "paper": "https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf",
+    "arxiv": "https://arxiv.org/abs/<ARXIV PAPER ID>",
+    "code": "https://github.com/YOUR REPO HERE",
+    "supplementary": "static/pdfs/supplementary_material.pdf"
+  },
+  "features": {
+    "show_problem_statement": true,
+    "show_method_overview": true,
+    "show_datasets": true,
+    "show_performance_metrics": true,
+    "show_api_docs": false,
+    "show_demo": false,
+    "show_case_studies": false,
+    "show_video_presentation": true,
+    "show_poster": true,
+    "show_bibtex": true
+  },
+  "datasets": [
+    {
+      "name": "NASA C-MAPSS",
+      "description": "Turbofan engine degradation simulation",
+      "size": "20,631 samples",
+      "task": "RUL Prediction",
+      "metrics": ["RMSE", "Score"]
+    },
+    {
+      "name": "PHM08 Challenge",
+      "description": "Bearing fault detection and classification",
+      "size": "2,156 samples",
+      "task": "Fault Classification",
+      "metrics": ["Accuracy", "F1-Score"]
+    },
+    {
+      "name": "IMS Bearing",
+      "description": "Bearing vibration data for condition monitoring",
+      "size": "984 samples",
+      "task": "Health Assessment",
+      "metrics": ["AUC", "Precision"]
+    },
+    {
+      "name": "FEMTO-ST",
+      "description": "Bearing accelerated life test data",
+      "size": "17 complete runs",
+      "task": "RUL Prediction",
+      "metrics": ["α-λ Score"]
+    }
+  ],
+  "performance": {
+    "rul_prediction": {
+      "methods": [
+        {"name": "PHM-LLM (Ours)", "rmse": 12.4, "score": 245.8, "mae": 9.7, "highlight": true},
+        {"name": "LSTM", "rmse": 16.8, "score": 338.4, "mae": 13.2, "highlight": false},
+        {"name": "CNN-LSTM", "rmse": 15.1, "score": 302.1, "mae": 12.1, "highlight": false},
+        {"name": "Transformer", "rmse": 14.2, "score": 281.6, "mae": 11.5, "highlight": false}
+      ]
+    },
+    "fault_classification": {
+      "methods": [
+        {"name": "PHM-LLM (Ours)", "accuracy": 94.3, "f1": 0.941, "precision": 0.938, "highlight": true},
+        {"name": "SVM", "accuracy": 87.2, "f1": 0.869, "precision": 0.871, "highlight": false},
+        {"name": "Random Forest", "accuracy": 89.6, "f1": 0.892, "precision": 0.895, "highlight": false},
+        {"name": "Deep CNN", "accuracy": 91.8, "f1": 0.916, "precision": 0.919, "highlight": false}
+      ]
+    }
+  },
+  "carousel_items": [
+    {
+      "image": "static/images/rul_prediction.png",
+      "alt": "RUL Prediction Results",
+      "title": "RUL Prediction Performance",
+      "description": "Comparison of PHM-LLM vs. baseline methods on NASA C-MAPSS dataset showing 25% improvement in RMSE."
+    },
+    {
+      "image": "static/images/fault_classification.png",
+      "alt": "Fault Classification Results",
+      "title": "Fault Classification",
+      "description": "Confusion matrix and performance metrics for bearing fault detection achieving 94.3% accuracy."
+    },
+    {
+      "image": "static/images/system_architecture.png",
+      "alt": "System Architecture",
+      "title": "System Architecture",
+      "description": "Overview of the PHM-LLM framework showing data flow from sensors to maintenance decisions."
+    },
+    {
+      "image": "static/images/health_dashboard.png",
+      "alt": "Health Monitoring Dashboard",
+      "title": "Health Monitoring Dashboard",
+      "description": "Real-time system health visualization with predictive alerts and maintenance recommendations."
+    }
+  ],
+  "theme": {
+    "primary_color": "#3273dc",
+    "secondary_color": "#363636",
+    "accent_color": "#48c774",
+    "background_color": "#fafafa",
+    "text_color": "#4a4a4a"
+  }
+}

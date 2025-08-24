@@ -1,0 +1,149 @@
+{
+  "project": {
+    "name": "PHM Agent: Intelligent Maintenance Assistant",
+    "short_name": "PHM-Agent",
+    "type": "agent",
+    "description": "An AI-powered agent for automated prognostic health management and maintenance decision support",
+    "keywords": ["PHM agent", "intelligent maintenance", "AI assistant", "predictive maintenance", "fault diagnosis", "maintenance automation", "industrial AI", "condition monitoring", "maintenance decision support"]
+  },
+  "authors": [
+    {
+      "name": "Dr. Sarah Chen",
+      "link": "https://example.com/sarah-chen",
+      "equal_contribution": true
+    },
+    {
+      "name": "Prof. Michael Rodriguez", 
+      "link": "https://example.com/michael-rodriguez",
+      "equal_contribution": true
+    },
+    {
+      "name": "Dr. Amit Patel",
+      "link": "https://example.com/amit-patel",
+      "equal_contribution": false
+    }
+  ],
+  "institution": {
+    "name": "Industrial AI Research Lab, Tech University",
+    "conference": "ICCPS 2024"
+  },
+  "links": {
+    "paper": "https://arxiv.org/pdf/2024.12345.pdf",
+    "arxiv": "https://arxiv.org/abs/2024.12345",
+    "code": "https://github.com/example/phm-agent",
+    "demo": "https://demo.example.com/phm-agent",
+    "api_docs": "https://docs.example.com/phm-agent"
+  },
+  "features": {
+    "show_problem_statement": true,
+    "show_method_overview": true,
+    "show_datasets": false,
+    "show_performance_metrics": true,
+    "show_api_docs": true,
+    "show_demo": true,
+    "show_case_studies": true,
+    "show_video_presentation": true,
+    "show_poster": false,
+    "show_bibtex": true
+  },
+  "capabilities": [
+    {
+      "icon": "🔍",
+      "title": "Smart Diagnostics",
+      "description": "Automated fault detection and root cause analysis using multi-modal sensor data and historical patterns."
+    },
+    {
+      "icon": "📊", 
+      "title": "Predictive Insights",
+      "description": "RUL prediction and failure forecasting with confidence intervals and risk assessments."
+    },
+    {
+      "icon": "🤖",
+      "title": "Natural Interaction", 
+      "description": "Conversational interface for maintenance queries and intelligent recommendation system."
+    },
+    {
+      "icon": "📅",
+      "title": "Smart Scheduling",
+      "description": "Automated maintenance planning with resource optimization and minimal downtime impact."
+    },
+    {
+      "icon": "🎯",
+      "title": "Decision Support",
+      "description": "Context-aware maintenance recommendations with cost-benefit analysis and priority ranking."
+    },
+    {
+      "icon": "📈",
+      "title": "Continuous Learning",
+      "description": "Self-improving through maintenance feedback and outcome tracking for enhanced accuracy."
+    }
+  ],
+  "performance_impact": [
+    {
+      "metric": "Downtime Reduction",
+      "value": 35,
+      "unit": "%"
+    },
+    {
+      "metric": "Cost Savings", 
+      "value": 28,
+      "unit": "%"
+    },
+    {
+      "metric": "Prediction Accuracy",
+      "value": 94.3,
+      "unit": "%"
+    }
+  ],
+  "integrations": [
+    {
+      "title": "🏭 Manufacturing",
+      "description": "Integrate with SCADA systems for real-time equipment monitoring and automated maintenance workflows."
+    },
+    {
+      "title": "⚡ Energy", 
+      "description": "Deploy in power plants and renewable energy facilities for critical equipment health management."
+    },
+    {
+      "title": "🚀 Aerospace",
+      "description": "Aircraft and satellite maintenance with strict safety requirements and compliance standards."
+    },
+    {
+      "title": "🏥 Healthcare",
+      "description": "Medical equipment maintenance with patient safety priorities and regulatory compliance."
+    }
+  ],
+  "api_endpoints": [
+    {
+      "endpoint": "/api/v1/health",
+      "method": "GET", 
+      "description": "Get equipment health status",
+      "example": "GET /api/v1/health?equipment_id=pump-001"
+    },
+    {
+      "endpoint": "/api/v1/predict",
+      "method": "POST",
+      "description": "Get RUL prediction", 
+      "example": "POST /api/v1/predict with sensor data"
+    },
+    {
+      "endpoint": "/api/v1/recommend",
+      "method": "POST",
+      "description": "Get maintenance recommendations",
+      "example": "POST /api/v1/recommend with context"
+    },
+    {
+      "endpoint": "/api/v1/schedule", 
+      "method": "POST",
+      "description": "Schedule maintenance tasks",
+      "example": "POST /api/v1/schedule with task details"
+    }
+  ],
+  "theme": {
+    "primary_color": "#2b6cb0",
+    "secondary_color": "#4a5568", 
+    "accent_color": "#38a169",
+    "background_color": "#f7fafc",
+    "text_color": "#2d3748"
+  }
+}

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="PHMBench: Comprehensive benchmark suite for prognostic health management algorithms evaluation and comparison">
+  <meta property="og:title" content="PHMBench: Comprehensive PHM Evaluation Suite"/>
+  <meta property="og:description" content="Standardized benchmark for evaluating prognostic health management algorithms with datasets, metrics, and leaderboards"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:image" content="static/image/phm_benchmark_banner.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="PHMBench: Comprehensive PHM Evaluation Suite">
+  <meta name="twitter:description" content="Standardized benchmark for evaluating prognostic health management algorithms">
+  <meta name="twitter:image" content="static/images/phm_benchmark_twitter_banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="PHM benchmark, prognostic health management, evaluation suite, RUL prediction, fault diagnosis, benchmark datasets, leaderboard, algorithm comparison, PHM evaluation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PHMBench: Comprehensive PHM Evaluation Suite</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/phm-theme.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="static/js/phm-functionality.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">PHMBench: Comprehensive PHM Evaluation Suite</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Institution Name<br>Conference name and year</span>
+            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Paper link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- Leaderboard link -->
+              <span class="link-block">
+                <a href="#leaderboard" class="external-link button is-normal is-rounded is-primary">
+                  <span class="icon"><i class="fas fa-trophy"></i></span>
+                  <span>Leaderboard</span>
+                </a>
+              </span>
+
+              <!-- Download Datasets -->
+              <span class="link-block">
+                <a href="#datasets" class="external-link button is-normal is-rounded is-info phm-button" data-action="download-data">
+                  <span class="icon"><i class="fas fa-download"></i></span>
+                  <span>Download</span>
+                </a>
+              </span>
+
+              <!-- Evaluation Toolkit -->
+              <span class="link-block">
+                <a href="https://github.com/YOUR REPO HERE" target="_blank" class="external-link button is-normal is-rounded is-success">
+                  <span class="icon"><i class="fas fa-tools"></i></span>
+                  <span>Eval Toolkit</span>
+                </a>
+              </span>
+
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/YOUR REPO HERE" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/phm_benchmark_overview.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        PHMBench: A comprehensive evaluation suite for prognostic health management algorithms with standardized datasets, metrics, and evaluation protocols.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present PHMBench, a comprehensive benchmark suite designed to standardize the evaluation of prognostic health management algorithms. Our benchmark includes 15+ carefully curated datasets, standardized evaluation metrics, and automated assessment tools that enable fair comparison of PHM methods across different domains. PHMBench covers critical PHM tasks including remaining useful life (RUL) prediction, fault diagnosis, anomaly detection, and health assessment. With over 50 baseline implementations and a continuously updated leaderboard, PHMBench serves as the de facto standard for PHM algorithm evaluation, facilitating reproducible research and accelerating progress in the field.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End abstract -->
+
+<!-- Benchmark Overview -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Benchmark Overview</h2>
+        <div class="content">
+          <div class="columns is-multiline">
+            <div class="column is-one-quarter">
+              <div class="phm-metric">
+                <h3>Datasets</h3>
+                <div class="metric-value">15<span class="metric-unit">+</span></div>
+              </div>
+            </div>
+            <div class="column is-one-quarter">
+              <div class="phm-metric">
+                <h3>Baseline Methods</h3>
+                <div class="metric-value">50<span class="metric-unit">+</span></div>
+              </div>
+            </div>
+            <div class="column is-one-quarter">
+              <div class="phm-metric">
+                <h3>Evaluation Metrics</h3>
+                <div class="metric-value">20<span class="metric-unit">+</span></div>
+              </div>
+            </div>
+            <div class="column is-one-quarter">
+              <div class="phm-metric">
+                <h3>Submissions</h3>
+                <div class="metric-value">200<span class="metric-unit">+</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End benchmark overview -->
+
+<!-- Datasets Section -->
+<section id="datasets" class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Benchmark Datasets</h2>
+        <div class="content">
+          <div class="table-container">
+            <table class="table performance-table is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Dataset</th>
+                  <th>Domain</th>
+                  <th>Task</th>
+                  <th>Samples</th>
+                  <th>Features</th>
+                  <th>Status</th>
+                  <th>Download</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>NASA C-MAPSS</strong></td>
+                  <td>Aerospace</td>
+                  <td>RUL Prediction</td>
+                  <td>20,631</td>
+                  <td>26</td>
+                  <td><span class="health-indicator health-good">Available</span></td>
+                  <td><button class="button is-small is-primary phm-button" data-action="download-data">Download</button></td>
+                </tr>
+                <tr>
+                  <td><strong>PHM08 Challenge</strong></td>
+                  <td>Manufacturing</td>
+                  <td>Fault Classification</td>
+                  <td>2,156</td>
+                  <td>8</td>
+                  <td><span class="health-indicator health-good">Available</span></td>
+                  <td><button class="button is-small is-primary phm-button" data-action="download-data">Download</button></td>
+                </tr>
+                <tr>
+                  <td><strong>IMS Bearing</strong></td>
+                  <td>Manufacturing</td>
+                  <td>Health Assessment</td>
+                  <td>984</td>
+                  <td>4</td>
+                  <td><span class="health-indicator health-good">Available</span></td>
+                  <td><button class="button is-small is-primary phm-button" data-action="download-data">Download</button></td>
+                </tr>
+                <tr>
+                  <td><strong>FEMTO-ST</strong></td>
+                  <td>Manufacturing</td>
+                  <td>RUL Prediction</td>
+                  <td>17 runs</td>
+                  <td>2</td>
+                  <td><span class="health-indicator health-good">Available</span></td>
+                  <td><button class="button is-small is-primary phm-button" data-action="download-data">Download</button></td>
+                </tr>
+                <tr>
+                  <td><strong>XJTU-SY</strong></td>
+                  <td>Manufacturing</td>
+                  <td>RUL Prediction</td>
+                  <td>32 bearings</td>
+                  <td>2</td>
+                  <td><span class="health-indicator health-good">Available</span></td>
+                  <td><button class="button is-small is-primary phm-button" data-action="download-data">Download</button></td>
+                </tr>
+                <tr>
+                  <td><strong>WindTurbine-1</strong></td>
+                  <td>Energy</td>
+                  <td>Anomaly Detection</td>
+                  <td>50,000</td>
+                  <td>12</td>
+                  <td><span class="health-indicator health-warning">Processing</span></td>
+                  <td><button class="button is-small is-light" disabled>Soon</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End datasets -->
+
+<!-- Leaderboard Section -->
+<section id="leaderboard" class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">📊 Leaderboard</h2>
+        
+        <!-- RUL Prediction Leaderboard -->
+        <div class="content">
+          <h4 class="title is-4">RUL Prediction (NASA C-MAPSS FD001)</h4>
+          <div class="table-container">
+            <table class="table performance-table is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Method</th>
+                  <th>Team/Organization</th>
+                  <th>RMSE</th>
+                  <th>Score</th>
+                  <th>MAE</th>
+                  <th>Date</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="best-result">
+                  <td>🏆 1</td>
+                  <td><strong>PHM-LLM</strong></td>
+                  <td>Our Team</td>
+                  <td><strong>12.4</strong></td>
+                  <td><strong>245.8</strong></td>
+                  <td><strong>9.7</strong></td>
+                  <td>2024-01-15</td>
+                  <td><a href="#" class="button is-small is-primary">View</a></td>
+                </tr>
+                <tr>
+                  <td>🥈 2</td>
+                  <td>Deep-RUL</td>
+                  <td>University A</td>
+                  <td>13.8</td>
+                  <td>268.3</td>
+                  <td>10.2</td>
+                  <td>2024-01-10</td>
+                  <td><a href="#" class="button is-small is-info">View</a></td>
+                </tr>
+                <tr>
+                  <td>🥉 3</td>
+                  <td>Transformer-PHM</td>
+                  <td>Company B</td>
+                  <td>14.2</td>
+                  <td>281.6</td>
+                  <td>11.5</td>
+                  <td>2024-01-08</td>
+                  <td><a href="#" class="button is-small is-info">View</a></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>CNN-LSTM</td>
+                  <td>Research Lab C</td>
+                  <td>15.1</td>
+                  <td>302.1</td>
+                  <td>12.1</td>
+                  <td>2024-01-05</td>
+                  <td><a href="#" class="button is-small is-info">View</a></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>LSTM-Attention</td>
+                  <td>University D</td>
+                  <td>16.8</td>
+                  <td>338.4</td>
+                  <td>13.2</td>
+                  <td>2024-01-03</td>
+                  <td><a href="#" class="button is-small is-info">View</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Fault Classification Leaderboard -->
+        <div class="content">
+          <h4 class="title is-4">Fault Classification (PHM08 Challenge)</h4>
+          <div class="table-container">
+            <table class="table performance-table is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Method</th>
+                  <th>Team/Organization</th>
+                  <th>Accuracy</th>
+                  <th>F1-Score</th>
+                  <th>Precision</th>
+                  <th>Date</th>
+                  <th>Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="best-result">
+                  <td>🏆 1</td>
+                  <td><strong>PHM-LLM</strong></td>
+                  <td>Our Team</td>
+                  <td><strong>94.3%</strong></td>
+                  <td><strong>0.941</strong></td>
+                  <td><strong>0.938</strong></td>
+                  <td>2024-01-15</td>
+                  <td><a href="#" class="button is-small is-primary">View</a></td>
+                </tr>
+                <tr>
+                  <td>🥈 2</td>
+                  <td>Deep-Classification</td>
+                  <td>Company E</td>
+                  <td>91.8%</td>
+                  <td>0.916</td>
+                  <td>0.919</td>
+                  <td>2024-01-12</td>
+                  <td><a href="#" class="button is-small is-info">View</a></td>
+                </tr>
+                <tr>
+                  <td>🥉 3</td>
+                  <td>Random Forest+</td>
+                  <td>Research Lab F</td>
+                  <td>89.6%</td>
+                  <td>0.892</td>
+                  <td>0.895</td>
+                  <td>2024-01-10</td>
+                  <td><a href="#" class="button is-small is-info">View</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End leaderboard -->
+
+<!-- Evaluation Protocol -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Evaluation Protocol</h2>
+        <div class="content has-text-left">
+          <h4 class="title is-5">Submission Guidelines</h4>
+          <ol>
+            <li><strong>Code Submission:</strong> Submit your implementation via GitHub repository with clear documentation</li>
+            <li><strong>Reproducibility:</strong> Include environment setup, dependencies, and exact hyperparameters</li>
+            <li><strong>Evaluation:</strong> Your model will be evaluated on held-out test sets using our automated system</li>
+            <li><strong>Fair Comparison:</strong> All methods use identical train/validation/test splits and evaluation metrics</li>
+          </ol>
+
+          <h4 class="title is-5">Standard Evaluation Metrics</h4>
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Task</th>
+                  <th>Primary Metric</th>
+                  <th>Secondary Metrics</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>RUL Prediction</td>
+                  <td>RMSE</td>
+                  <td>MAE, Score, R²</td>
+                  <td>Root mean square error with asymmetric scoring</td>
+                </tr>
+                <tr>
+                  <td>Fault Classification</td>
+                  <td>F1-Score</td>
+                  <td>Accuracy, Precision, Recall</td>
+                  <td>Weighted F1-score for multi-class problems</td>
+                </tr>
+                <tr>
+                  <td>Anomaly Detection</td>
+                  <td>AUC-ROC</td>
+                  <td>Precision@K, AUC-PR</td>
+                  <td>Area under ROC curve for detection performance</td>
+                </tr>
+                <tr>
+                  <td>Health Assessment</td>
+                  <td>Correlation</td>
+                  <td>Monotonicity, Trendability</td>
+                  <td>Correlation with ground truth degradation</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4 class="title is-5">Quick Start</h4>
+          <pre><code># Install evaluation toolkit
+pip install phm-bench
+
+# Download datasets
+phm-bench download --dataset nasa-cmapss
+
+# Run evaluation
+phm-bench evaluate --method your_method.py --dataset nasa-cmapss --task rul
+
+# Submit results
+phm-bench submit --results results.json --method-name "YourMethod"</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End evaluation protocol -->
+
+<!-- Citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{phmBench2024,
+  title={PHMBench: A Comprehensive Benchmark for Prognostic Health Management},
+  author={Author, First and Author, Second and Author, Third},
+  journal={Conference/Journal Name},
+  year={2024},
+  publisher={Publisher}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This benchmark page was built using the <a href="https://github.com/YOUR-REPO/PHM-LLM-Template" target="_blank">PHM-LLM Template</a>.
+            PHMBench is maintained by the community and welcomes contributions. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
